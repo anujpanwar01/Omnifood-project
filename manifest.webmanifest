@@ -1,0 +1,8 @@
+{
+    "icons":[
+        {"src":"/omnifood project/content/img/favicon-192.png",
+        "type":"image/png","sizes":"192"},
+        {"src":"/omnifood project/content/img/favicon-512.png",
+            "type":"image/png","sizes":"512"}
+    ]
+    }

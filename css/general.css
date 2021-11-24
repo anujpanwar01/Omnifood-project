@@ -1,0 +1,150 @@
+/* *********************** */
+/*GENERAL REUSABLE COMPONENTS */
+/* *********************** */
+
+/*****************/
+/* grid-class */
+/*****************/
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.397);
+}
+.containers {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 4.8rem;
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-col-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-v-center {
+  align-items: center;
+}
+/*****************/
+/* headings-class */
+/*****************/
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.2;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.76px;
+}
+/*****************/
+/* btn-class */
+/*****************/
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+
+  /* for btn */
+  cursor: pointer;
+  border: none;
+
+  /* for animation */
+  transition: all 300ms;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  color: #555;
+  background-color: #fff;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  color: #555;
+  background-color: #fdf2e9;
+  /* trick to add border inside element */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+/**********************/
+/* list items */
+/*********************/
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+  justify-content: center;
+}
+.list-item {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #cf711f;
+}
+
+/***************
+helper classes 
+****************\
+/* sm-- small ,,md--medium */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center;
+}
+strong {
+  font-weight: 600;
+}
